@@ -1,0 +1,5 @@
+Clase 6-6: Iterando
+
+Prompt:
+
+/Grill-Me Con respecto al proceso de reserrvar una cita, quiero agregar un indicador que ponga los pasos para reservar una cita, y en qué paso se encuentra el usuario. El usuario podrá avanzar hacia adelante y hacia atrás, y el indicador siempre mostrará en que paso se encuentra el usuario.

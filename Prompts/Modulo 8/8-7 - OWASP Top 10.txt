@@ -1,0 +1,15 @@
+Clase: 8-7: OWASP Top 10
+
+Prompt
+
+Revisa el proyecto utilizando OWASP Top 10 como checklist.
+
+Para cada categoría indica:
+- Si aplica.
+- Evidencia encontrada.
+- Nivel de riesgo.
+- Cómo mitigarlo.
+
+No especules. Si no encuentras evidencia suficiente, indícalo.
+
+Utiliza el OWASP TOP 10 2025.

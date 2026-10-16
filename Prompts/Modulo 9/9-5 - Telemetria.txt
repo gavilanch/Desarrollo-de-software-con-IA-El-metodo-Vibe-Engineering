@@ -1,0 +1,38 @@
+Clase: 9-5: Telemetría
+
+Prompt
+
+Revisa esta aplicación como si fueras un ingeniero de observabilidad encargado de prepararla para producción.
+
+Tu objetivo es proponer una estrategia de telemetría útil, no simplemente agregar eventos.
+
+Analiza toda la solución e identifica:
+
+- Los procesos de negocio más importantes.
+- Las operaciones críticas para el funcionamiento del sistema.
+- Las integraciones con servicios externos.
+- Los procesos en segundo plano.
+- Los posibles cuellos de botella.
+
+Para cada caso, responde:
+
+- ¿Qué evento o métrica conviene registrar?
+- ¿Qué pregunta permitiría responder esa telemetría?
+- ¿Qué propiedades deberían incluirse (Ids, duración, resultado, etc.)?
+- ¿Cuál sería el beneficio práctico de recopilar esa información?
+
+Además, sigue estas reglas:
+
+- Prioriza eventos de negocio sobre detalles de implementación.
+- No propongas telemetría redundante si la plataforma ya la recopila automáticamente (por ejemplo, duración de requests HTTP, excepciones no controladas, llamadas HTTP o consultas SQL cuando corresponda).
+- Incluye únicamente propiedades útiles para filtrar, agrupar o diagnosticar problemas.
+- No registres información sensible como contraseñas, tokens, datos médicos, información financiera o datos personales innecesarios.
+- Mantén una nomenclatura consistente para todos los eventos.
+- Si propones métricas, explica cómo podrían utilizarse posteriormente en dashboards o alertas.
+- Si detectas que algún evento tiene poco valor práctico, no lo propongas.
+
+No modifiques el código todavía.
+
+Produce primero un informe con todas las recomendaciones, ordenadas por prioridad (Alta, Media y Baja), explicando brevemente por qué cada una aporta valor.
+
+Una vez finalizado el informe, espera mi aprobación antes de implementar los cambios.

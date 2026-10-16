@@ -1,0 +1,6 @@
+Clase: 7-2: Dashboard:
+
+Prompt:
+
+Usa ImageGen para generar un mockup de UI de alta calidad con respecto a la siguiente idea: Un dashboard donde podamos ver distintas informaciones de nuestra app: cantidad de doctores, cantidad de citas realizadas por día (un gráfico), etc.
+

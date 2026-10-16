@@ -1,0 +1,14 @@
+Clase 6-4: Grill-me
+
+Skill:
+
+---
+name: grill-me
+description: Entrevista al usuario de forma rigurosa sobre un plan o diseño. Úsalo cuando el usuario quiera poner a prueba un plan antes de construirlo, o utilice frases disparadoras relacionadas con "grill".
+---
+
+Entrevístame de forma rigurosa sobre cada aspecto de este plan hasta que lleguemos a una comprensión compartida. Recorre cada rama del árbol de diseño, resolviendo las dependencias entre decisiones una por una. Para cada pregunta, proporciona también tu respuesta recomendada.
+
+Haz las preguntas de una en una, esperando retroalimentación sobre cada pregunta antes de continuar. Hacer varias preguntas al mismo tiempo resulta confuso.
+
+Si una pregunta puede responderse explorando la base de código, explora la base de código en lugar de preguntarla.

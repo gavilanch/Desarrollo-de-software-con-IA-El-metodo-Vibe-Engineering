@@ -1,0 +1,80 @@
+Clase 11-5: Observabilidad
+
+Prompt
+
+
+Actúa como un Senior Software Engineer especializado en observabilidad.
+
+Analiza TODO el código que fue modificado para implementar el siguiente feature, pero NO realices cambios en el código.
+
+Feature: 
+
+Tu objetivo es determinar si la observabilidad del feature es suficiente o si convendría agregar logging estructurado.
+
+Genera un informe con las siguientes secciones:
+
+## Resumen
+Indica si el feature tiene una observabilidad:
+- Adecuada
+- Aceptable, pero mejorable
+- Insuficiente
+
+Explica brevemente por qué.
+
+## Oportunidades de mejora
+
+Para cada lugar donde recomiendes agregar logging, indica:
+
+- Archivo o componente.
+- Método.
+- Qué evento debería registrarse.
+- Nivel recomendado (Information, Warning o Error).
+- Qué placeholders incluirías (por ejemplo: PacienteId, CitaId, UsuarioId, CorrelationId, etc.).
+- Justificación de por qué ese log aportaría valor para diagnosticar problemas en producción.
+
+## Logs existentes
+
+Si encuentras logs ya implementados, evalúa si:
+
+- están en el lugar correcto;
+- el nivel (Information, Warning, Error) es el adecuado;
+- utilizan logging estructurado con placeholders;
+- contienen suficiente contexto;
+- exponen información sensible.
+
+Indica cualquier mejora sugerida, pero sin modificar el código.
+
+## Cobertura de observabilidad
+
+Evalúa si el feature registra adecuadamente eventos importantes como:
+
+- creación, actualización o eliminación de entidades;
+- operaciones relevantes de escritura en la base de datos;
+- llamadas a APIs externas;
+- envío de correos, notificaciones o eventos;
+- inicio y final de procesos largos;
+- operaciones cuyo éxito sea importante para el diagnóstico;
+- validaciones de negocio que bloqueen una operación;
+- excepciones que impidan completar una operación.
+
+Indica cuáles están cubiertos y cuáles no.
+
+## Conclusión
+
+Resume las recomendaciones en orden de prioridad:
+- Alta
+- Media
+- Baja
+
+No implementes ninguna recomendación.
+
+Reglas de evaluación:
+
+- Considera como buena práctica el uso de logging estructurado con placeholders, nunca interpolación de strings.
+- Los LogInformation deben registrar únicamente eventos relevantes para comprender el comportamiento de la aplicación en producción.
+- Los LogWarning deben utilizarse para validaciones de negocio o situaciones recuperables.
+- Los LogError deben reservarse para errores que impidan completar una operación.
+- Siempre recomienda incluir los identificadores relevantes para facilitar el diagnóstico.
+- Nunca sugieras registrar información sensible como contraseñas, tokens, datos médicos o información financiera.
+- Evita recomendar logs triviales o excesivamente verbosos.
+- Prioriza la calidad de la observabilidad por encima de la cantidad de logs.

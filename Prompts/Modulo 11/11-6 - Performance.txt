@@ -1,0 +1,105 @@
+Clase 11-6: Performance
+
+Prompt
+
+Actúa como un Senior Software Engineer especializado en performance de aplicaciones ASP.NET Core.
+
+Analiza TODO el código que fue modificado para implementar el siguiente feature, pero NO realices cambios en el código.
+
+Feature: 
+
+Tu objetivo no es optimizar todavía, sino identificar posibles cuellos de botella y oportunidades de mejora de performance que valga la pena investigar.
+
+Genera un informe con las siguientes secciones:
+
+## Resumen
+
+Indica si el feature parece tener un riesgo de performance:
+
+- Bajo
+- Medio
+- Alto
+
+Explica brevemente por qué.
+
+## Posibles cuellos de botella
+
+Para cada posible problema encontrado, indica:
+
+- Archivo o componente.
+- Método o flujo afectado.
+- Qué parte del código podría afectar el rendimiento.
+- Por qué podría convertirse en un cuello de botella.
+- Qué evidencia sería necesaria para confirmar la hipótesis.
+- Qué impacto estimas que tendría si realmente fuera el problema.
+- Prioridad de investigación: Alta, Media o Baja.
+
+## Aspectos específicos a revisar
+
+Evalúa si el feature introduce o modifica código relacionado con:
+
+- Consultas a base de datos.
+- Consultas que podrían causar N+1.
+- Uso innecesario de Include.
+- Consultas sin filtros adecuados.
+- Falta de paginación.
+- Carga excesiva de datos en memoria.
+- Uso de ToList, AsEnumerable o materialización prematura.
+- Operaciones síncronas en flujos web.
+- Llamadas repetidas a servicios externos.
+- Procesamiento costoso dentro de loops.
+- Serialización o deserialización de objetos grandes.
+- Escrituras frecuentes o innecesarias en base de datos.
+- Transacciones demasiado amplias.
+- Falta de caché en datos costosos y relativamente estables.
+- Uso ineficiente de archivos, streams o blobs.
+- Operaciones CPU-bound en el request thread.
+- Posibles problemas de concurrencia o bloqueo.
+
+Indica cuáles aplican, cuáles no aplican y cuáles requieren más evidencia.
+
+## Evidencia necesaria
+
+Sugiere qué información habría que recolectar para confirmar o descartar los riesgos encontrados, por ejemplo:
+
+- métricas de Application Insights;
+- tiempos de respuesta por endpoint;
+- trazas de dependencias;
+- duración de queries SQL;
+- número de queries por request;
+- consumo de memoria;
+- uso de CPU;
+- volumen esperado de datos;
+- frecuencia esperada del feature;
+- cantidad de usuarios concurrentes;
+- logs o telemetría existente;
+- pruebas de carga;
+- benchmarks específicos.
+
+No inventes métricas. Si no hay evidencia en el código, dilo explícitamente.
+
+## Recomendaciones de investigación
+
+Ordena las recomendaciones por prioridad:
+
+- Alta
+- Media
+- Baja
+
+Para cada recomendación, indica qué se debería medir primero antes de optimizar.
+
+## Conclusión
+
+Resume si vale la pena optimizar ahora o si primero se necesita instrumentar, medir o probar bajo carga.
+
+Reglas de evaluación:
+
+- No modifiques código.
+- No propongas microoptimizaciones.
+- No recomiendes cambios cosméticos.
+- No asumas que algo es un problema solo porque “podría serlo”.
+- Diferencia claramente entre sospecha, evidencia e impacto estimado.
+- Prioriza problemas que puedan afectar significativamente latencia, throughput, memoria, CPU, base de datos o escalabilidad.
+- Considera especialmente el impacto en producción y bajo concurrencia.
+- Si una mejora requiere cambiar arquitectura, dilo, pero solo si el impacto potencial lo justifica.
+- Si el código parece suficientemente eficiente para el tamaño esperado del feature, indícalo claramente.

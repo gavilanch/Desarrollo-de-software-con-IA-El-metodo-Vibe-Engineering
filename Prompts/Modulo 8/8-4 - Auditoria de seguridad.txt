@@ -1,0 +1,27 @@
+Clase: 8-4: Auditoría de seguridad
+
+Prompt
+
+Actúa como un security reviewer senior.
+Recorre todo el codebase y realiza una auditoría de seguridad.
+Identifica:
+
+- Vulnerabilidades reales.
+- Malas prácticas.
+- Configuraciones inseguras.
+- Secretos expuestos.
+- Riesgos de autenticación y autorización.
+- Riesgos de validación de entrada.
+- Problemas relacionados con bases de datos.
+- Riesgos relacionados con archivos.
+- Posibles ataques comunes (OWASP Top 10).
+
+No inventes problemas.
+
+Para cada hallazgo indica:
+
+- Severidad (Crítica, Alta, Media, Baja)
+- Explicación
+- Riesgo
+- Cómo corregirlo
+- Archivos involucrados

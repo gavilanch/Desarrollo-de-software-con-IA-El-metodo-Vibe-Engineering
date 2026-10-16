@@ -1,0 +1,16 @@
+Clase: 8-5: Buscar problemas específicos
+
+Prompt
+
+Revisa exclusivamente la autenticación y autorización del proyecto.
+
+Verifica:
+
+- Endpoints sin autorización cuando deberían tenerla.
+- Roles mal aplicados.
+- Claims insuficientes.
+- Elevación de privilegios.
+- Broken Access Control.
+- Uso incorrecto de JWT o Cookies.
+
+Muestra únicamente problemas reales.

@@ -1,0 +1,7 @@
+Clase: 6-9: Sub-agentes
+
+Prompt:
+
+Implementa una solución para los issues #26 y #27.
+
+Usa un subagente para cada tarea. Al final, crea un PR para cada una de las tareas usando /hacer-pr

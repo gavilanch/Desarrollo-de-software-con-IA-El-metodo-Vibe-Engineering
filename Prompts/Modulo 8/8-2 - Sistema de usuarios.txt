@@ -1,0 +1,5 @@
+Clase - Sistema de usuarios
+
+Prompt:
+
+implementa el sistema de usuarios con Identity y EF Core. Toma en cuenta que esto sirve para empleados de clínicas. Para un paciente reservar una cita, no es necesario estar logueado.

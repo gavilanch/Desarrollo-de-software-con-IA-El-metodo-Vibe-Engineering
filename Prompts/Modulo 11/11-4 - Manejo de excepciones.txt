@@ -1,0 +1,28 @@
+Clase 11-4: Manejo de Excepciones
+
+Prompt
+
+
+Actúa como un senior software engineer.
+
+Recorre todo el código que hicimos para este feature y verifica el manejo de excepciones.
+
+Feature:
+
+Indicaciones:
+- No utilices excepciones para representar validaciones de negocio.
+- Captura únicamente las excepciones que puedan manejarse de forma útil.
+- Permite que el resto de excepciones se propaguen hasta el middleware global.
+- Conserva la excepción original.
+
+No inventes problemas.
+
+Solo analiza el código que modificamos para este feature. Ignora lo demás.
+
+Para cada hallazgo indica:
+
+- Severidad (Crítica, Alta, Media, Baja)
+- Explicación
+- Riesgo
+- Cómo corregirlo
+- Archivos involucrados

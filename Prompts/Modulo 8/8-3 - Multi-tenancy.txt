@@ -1,0 +1,5 @@
+Clase: 8-3: Multi-tenancy
+
+Prompt
+
+/Grill-me debemos implementar multi-tenancy básico en el proyecto. La idea es que podamos manejar varias clínicas, y cada clínica tenga su URL la cual le dará a los pacientes para que reserven en dicha clínica. Cada clínica debe poder manejar sus propios doctores, y ver solo el dashboard con sus datos.

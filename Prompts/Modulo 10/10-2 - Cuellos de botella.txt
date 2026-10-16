@@ -1,0 +1,16 @@
+Clase 10-2: Cuellos de botella
+
+Prompt
+
+Analiza esta aplicación de ASP.NET Core como si fueras un ingeniero especializado en performance. 
+
+Tu objetivo no es optimizar todavía, sino identificar posibles cuellos de botella.
+
+Para cada posible problema indica:
+
+- Qué parte del código podría afectar el rendimiento.
+- Por qué podría convertirse en un cuello de botella.
+- Qué evidencia sería necesaria para confirmar la hipótesis.
+- Qué impacto estimas que tendría si realmente fuera el problema.
+
+No propongas microoptimizaciones. Prioriza únicamente los cambios que podrían tener un impacto significativo.

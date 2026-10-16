@@ -1,0 +1,96 @@
+Clase 10-3: Hot Paths
+
+Prompt 1:
+
+Quiero simular datos de producción para una aplicación de reserva de citas médicas.
+
+El objetivo NO es generar números aleatorios, sino crear un escenario realista que sirva para enseñar análisis de performance.
+
+Genera información consistente entre sí para que exista uno o dos problemas importantes que los estudiantes puedan descubrir.
+
+Incluye:
+
+1. Los 10 endpoints más utilizados.
+
+Para cada uno indica:
+- Método HTTP
+- Ruta
+- Requests por minuto
+- Tiempo promedio
+- P95
+- P99
+- Porcentaje de errores
+
+2. Las consultas SQL más costosas.
+
+Para cada consulta incluye:
+- Breve descripción
+- Tiempo promedio
+- Veces ejecutada por minuto
+- Tiempo total consumido por minuto
+
+Haz que exista al menos un problema de N+1 y una consulta que necesite un índice.
+
+3. Tres trazas (distributed traces) completas.
+
+Cada traza debe mostrar:
+
+- Controlador
+- Servicios
+- Repositorios
+- Consultas SQL
+- Llamadas HTTP externas
+- Tiempo consumido por cada operación
+
+Haz que una traza sea claramente lenta por una llamada HTTP externa y otra por múltiples consultas SQL.
+
+4. Resumen de telemetría.
+
+Incluye:
+
+- Tiempo promedio de respuesta global
+- Cinco endpoints más lentos
+- Cinco endpoints con mayor tráfico
+- Dependencias externas más lentas
+- Operaciones que más CPU consumen
+- Operaciones que más memoria consumen
+
+5. Información del contexto.
+
+Describe brevemente:
+
+- Cantidad aproximada de pacientes
+- Cantidad de médicos
+- Cantidad de citas
+- Usuarios concurrentes
+- Horas pico
+
+Todo debe ser coherente con las métricas anteriores.
+
+IMPORTANTE:
+
+No reveles directamente dónde están los problemas.
+
+Los datos deben permitir que un estudiante llegue a conclusiones mediante análisis.
+
+El escenario debe parecer una aplicación real funcionando en producción.
+
+-----------------------------------------------------------
+
+Prompt 2:
+
+Produce un documento de texto con esta información para yo poder pasárselo a codex en otra sesión. Este documento debe ser un archivo local, no subirlo al repositorio.
+
+-----------------------------------------------------------
+
+Prompt 3:
+
+Estos son los tiempos promedio de respuesta de los endpoints de mi aplicación: (ver archivo adjunto).
+Analiza la información como si fueras un ingeniero especializado en performance. 
+No te limites a ordenar por tiempo de respuesta. 
+Considera también: 
+- Frecuencia de uso. 
+- Impacto en el negocio. 
+- Posible esfuerzo de implementación. 
+- Retorno esperado de la optimización. 
+Al final genera un ranking con las tres optimizaciones que implementarías primero y justifica la decisión.

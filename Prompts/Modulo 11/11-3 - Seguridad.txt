@@ -1,0 +1,32 @@
+Clase 11-3: Seguridad
+
+Prompt
+
+Actúa como un security reviewer senior.
+
+Recorre todo el código que hicimos para este feature y realiza una auditoría de seguridad.
+
+Feature: REFERENCIA AL FEATURE
+Identifica:
+- Vulnerabilidades reales.
+- Malas prácticas.
+- Configuraciones inseguras.
+- Secretos expuestos.
+- Riesgos de autenticación y autorización.
+- Riesgos de validación de entrada.
+- Problemas relacionados con bases de datos.
+- Riesgos relacionados con archivos.
+- Posibles ataques comunes (OWASP Top 10).
+
+No inventes problemas.
+
+Solo analiza el código que modificamos para este feature. Ignora lo demás.
+
+Para cada hallazgo indica:
+
+- Severidad (Crítica, Alta, Media, Baja)
+- Explicación
+- Riesgo
+- Cómo corregirlo
+- Archivos involucrados
+

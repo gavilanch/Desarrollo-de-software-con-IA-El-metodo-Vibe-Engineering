@@ -1,0 +1,9 @@
+Clase: 9-2: Manejo de excepciones
+
+Prompt
+
+Revisa la aplicación y agrega manejo de excepciones siguiendo estas reglas:
+- No utilices excepciones para representar validaciones de negocio.
+- Captura únicamente las excepciones que puedan manejarse de forma útil.
+- Permite que el resto de excepciones se propaguen hasta el middleware global.
+- Conserva la excepción original.

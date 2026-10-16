@@ -1,0 +1,22 @@
+Clase: 9-3: Logging estructurado
+
+Prompt
+
+Revisa la aplicación y agrega logging estructurado donde aporte valor para la observabilidad.
+
+Sigue estas reglas:
+
+- Usa logging estructurado con placeholders, nunca interpolación de strings.
+- Registra el inicio y el final de cada caso de uso.
+- Agrega LogInformation en acciones importantes, por ejemplo:
+	- creación, actualización o eliminación de entidades;
+	- escritura en la base de datos (SaveChanges, inserciones, actualizaciones o borrados);
+	- envío de correos, notificaciones o eventos;
+	- llamadas a APIs externas;
+	- inicio y final de procesos largos;
+	- cualquier operación cuyo éxito sea relevante para diagnosticar problemas.
+- Agrega LogWarning cuando una validación de negocio impida completar una operación o cuando ocurra una situación inesperada pero recuperable.
+- Agrega LogError únicamente cuando una excepción impida completar la operación.
+- Incluye siempre los identificadores relevantes (por ejemplo, PacienteId, CitaId, UsuarioId, PedidoId) para facilitar el diagnóstico.
+- No registres información sensible como contraseñas, tokens, datos médicos o información financiera.
+- No agregues logs triviales que describan cada línea de código; registra únicamente eventos con valor para entender el comportamiento de la aplicación en producción.

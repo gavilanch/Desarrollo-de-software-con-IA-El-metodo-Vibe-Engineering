@@ -1,0 +1,16 @@
+Clase 6-7: Generando issues de mantenimiento
+
+Prompt:
+
+Actúa como un empleado de una clínica que debe configurar doctores y horarios disponibles:
+
+Analiza este flujo:
+1. Crear un doctor
+2. Crear los horarios disponibles de dicho doctor
+
+Identifica:
+- Fricciones para el usuario
+- Información confusa
+- Pasos innecesarios
+- Posibles errores de UX
+- Mejoras sugeridas
